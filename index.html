@@ -3,11 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script>
+	function myFunction() {
+    	var uri = "bооtrооtwаr@gmail.com";
+    	var res = encodeURI(uri);
+    	document.getElementById("demo").innerHTML = res;}
+     </script>
 </head>
 <body bgcolor="black">
 <div style="margin-top: 20%;">
 	<p align="center"><font size="30px" color="white">戰爭的真正目的是和平</font></p>
-	<p align="center"><font color="white">發送郵件到: </font>bootrootwar@gmail.com</p>
+	<p align="center"><font color="white">發送郵件到: </font></p>
+	<button onclick="myFunction()">Show Mail</button>
+	<font color="white"><p id="demo"></p></font>
 </div>
 </body>
 </html>
+
